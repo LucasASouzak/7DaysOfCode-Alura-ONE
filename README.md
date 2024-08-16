@@ -21,4 +21,4 @@ O primeiro dia do #7DaysOfCode aborda a importância de entender como o Javascri
 
 ### O primeiro codigo reslvido no Link Abaixo:
 
-<link>https://github.com/LucasASouzak/7DaysOfCode-Alura-ONE/blob/c1b3596490b0fd4f435332ab21768aaa36511b7f/7DiasDesafioUM.html</link>
+Primeiro desafio concluído: [Click Aqui](https://github.com/LucasASouzak/7DaysOfCode-Alura-ONE/blob/c1b3596490b0fd4f435332ab21768aaa36511b7f/7DiasDesafioUM.html). #7DaysOfCode-Alura-ONE
