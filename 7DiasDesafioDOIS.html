@@ -14,15 +14,30 @@
                 font-weight: 600;
                 box-sizing: border-box;
                 display: flex;
-                align-items: center;
-                justify-content: space-between;
+                justify-content: center;
             }
         </style>
     </title>
 </head>
 <body>
     <script>
+        const nome = window.prompt('Qual o seu nome?')
+        const idade = window.prompt(' Quantos anos você tem?')
+        const linguagem = window.prompt('Qual linguagem de programação você está estudando?')
+
+        if ( nome && idade && linguagem){
+            document.writeln(`Olá ${nome}, você tem ${idade} anos e já está aprendendo ${linguagem}!`)
+        }else{
+            window.alert('Favor insira seus dados.')           
+        }
         
+        const resposta = window.prompt(`Você gosta de estudar ${linguagem}? Responda com o número 1 para SIM ou 2 para NÃO.`)
+         
+        if (resposta == 1 ){
+            document.writeln(`Muito bom! Continue estudando ${linguagem} e você terá muito sucesso.`)
+        }else{
+            document.writeln('Ahh que pena... Já tentou aprender outras linguagens?')
+        }
     </script>    
 </body>
 </html>
