@@ -19,6 +19,6 @@ console.log( false == '0' ); // Retorna true
 
 O primeiro dia do #7DaysOfCode aborda a importância de entender como o Javascript compara variáveis de diferentes tipos. O desafio consiste em reescrever um código que contém comparações imprecisas, utilizando o operador de igualdade estrita para garantir resultados precisos. 
 
-# O primeiro codigo reslvido no Link Abaixo:
+### O primeiro codigo reslvido no Link Abaixo:
 
-https://github.com/LucasASouzak/7DaysOfCode-Alura-ONE/blob/c1b3596490b0fd4f435332ab21768aaa36511b7f/7DiasDesafioUM.html
+<link>https://github.com/LucasASouzak/7DaysOfCode-Alura-ONE/blob/c1b3596490b0fd4f435332ab21768aaa36511b7f/7DiasDesafioUM.html</link>
