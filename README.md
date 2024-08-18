@@ -69,4 +69,4 @@ else {
 ```
 
 ### O Terceiro codigo resolvido no Link Abaixo:
-Segundo desafio concluído: [Click Aqui](https://github.com/LucasASouzak/7DaysOfCode-Alura-ONE/blob/main/7DiasDesafioDOIS.html). #7DaysOfCode-Alura-ONE
+Segundo desafio concluído: [Click Aqui](https://github.com/LucasASouzak/7DaysOfCode-Alura-ONE/blob/main/7DiasDesaioTRES.html). #7DaysOfCode-Alura-ONE
