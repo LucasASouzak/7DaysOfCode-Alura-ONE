@@ -43,3 +43,30 @@ alert(`Olá ${nome}, você tem ${idade} anos e já está aprendendo ${linguagem}
 
 ### O segundo codigo resolvido no Link Abaixo:
 Segundo desafio concluído: [Click Aqui](https://github.com/LucasASouzak/7DaysOfCode-Alura-ONE/blob/main/7DiasDesafioDOIS.html). #7DaysOfCode-Alura-ONE
+
+
+## #7DaysOfCode - Dia 3: Sistema de Boas-vindas Personalizado
+
+O desafio proposto consiste em criar um jogo interativo em JavaScript, simulando um caminho de aprendizado em programação. O jogador deve tomar diversas decisões que influenciarão o desenrolar da história, como escolher entre Front-end e Back-end, e quais tecnologias aprender.
+
+Conceitos-chave:
+
+Estruturas de controle: if, else, for, while.
+Entrada e saída de dados: prompt e alert.
+Lógica de programação: Criar fluxos de decisão e repetições.
+
+```JavaScript
+if (cidade === "Roma"){
+    // mostre a foto do “Coliseu”
+}
+else if (cidade === “Paris”){
+    // mostre a foto do “Torre Eiffel”
+}
+else {
+    // dê a resposta “Você não digitou nenhuma cidade válida”   
+
+}
+```
+
+### O Terceiro codigo resolvido no Link Abaixo:
+Segundo desafio concluído: [Click Aqui](https://github.com/LucasASouzak/7DaysOfCode-Alura-ONE/blob/main/7DiasDesafioDOIS.html). #7DaysOfCode-Alura-ONE

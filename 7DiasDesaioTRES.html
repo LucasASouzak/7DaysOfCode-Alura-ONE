@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>#7DaysOfCode - Lógica JS 1/7: Operações Booleanas</title>
+    <style>
+        body{
+            font: normal 2.5rem Arial;
+            display: flex;
+            box-sizing: border-box;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+    const nome = window.prompt('Qual o seu nome?')
+    const linguagem = window.prompt(`Olá ${nome}, você esta se dedicando aos estudos de programação, em qual area? Digite 1-Front-End ou 2-Back-End`)
+    
+    if (linguagem == 1){
+        const Front = window.prompt('Gostaria de aprender React ou aprender Vue: ')
+    }else if (linguagem == 2){
+        const Back = window.prompt('Gostaria de aprender C# ou aprender Java:')
+    }else{
+        window.alert('Digite uma opção válida')
+    }
+    const caminho = window.prompt('Você pretende seguir se especializando na área escolhida ou seguir se desenvolvendo para se tornar Fullstack:')
+
+    if (caminho == 'especializando'){
+        window.alert(`Parabéns por escolher se aprofundar em ${linguagem}! Essa é uma excelente decisão para quem busca se tornar um especialista nessa tecnologia. Continue se desenvolvendo e explore as diversas possibilidades que essa área oferece`)
+    }else if (linguagem == 'FullAtack'){
+        window.alert('Tornar-se um desenvolvedor Fullstack é uma ótima escolha para quem busca ter uma visão completa do desenvolvimento web. Você terá a oportunidade de trabalhar tanto no front-end quanto no back-end, tornando-se um profissional mais versátil')
+    }else{
+        window.alert('Digite uma opção valida')
+    }
+
+    const pergunta = window.prompt('Você possui interesse em alguma outra linguagem de progração? Digite: sim ou não')
+    while (pergunta == 'sim'){
+        var linguagemOpcional = window.prompt('Qual?')
+        window.alert(`Boa escolha, ${linguagemOpcional} é uma otima tecnoligia e muito desafiadora.Continue se desenvolvendo e explore as diversas possibilidades que essa área oferece `)
+        linguagemOpcional = window.prompt('Teria mais alguma linguagem que te chame a atenção para aprender?')
+    }
+
+    </script>
+</body>
+</html>
