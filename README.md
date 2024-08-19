@@ -29,7 +29,7 @@ O desafio de hoje consiste em criar um programa que simule um site de cadastro. 
 
 **Exemplo de Código (JavaScript):**
 
-```javascript
+```Javascript
 const nome = prompt("Qual o seu nome?");
 const idade = prompt("Quantos anos você tem?");
 const linguagem = prompt("Qual linguagem de programação você está estudando?");
@@ -70,3 +70,65 @@ else {
 
 ### O Terceiro codigo resolvido no Link Abaixo:
 Segundo desafio concluído: [Click Aqui](https://github.com/LucasASouzak/7DaysOfCode-Alura-ONE/blob/main/7DiasDesaioTRES.html). #7DaysOfCode-Alura-ONE
+
+## #7DaysOfCode - Dia 4: Jogo simples de adivinhação.
+
+Objetivo: Criar um jogo simples onde o jogador tenta adivinhar um número escolhido aleatoriamente pelo computador.
+
+Regras:
+
+O computador escolhe um número entre 0 e 10.
+O jogador tem 3 tentativas para acertar o número.
+A cada tentativa, o jogador informa seu palpite.
+Se o jogador acertar, o jogo termina e ele é parabenizado.
+Se o jogador errar, ele tem mais duas tentativas.
+Se o jogador não acertar em nenhuma das 3 tentativas, o número correto é revelado.
+Dicas:
+
+Utilize uma estrutura de repetição (como while ou for) para controlar as 3 tentativas.
+Para gerar um número aleatório, use 
+```JavaScript
+Math.random() e a fórmula: Math.floor(Math.random() * (máximo - mínimo + 1) + mínimo).
+```
+
+### O Quarto codigo resolvido no Link Abaixo:
+
+Segundo desafio concluído: [Click Aqui](https://github.com/LucasASouzak/7DaysOfCode-Alura-ONE/blob/main/7DiasDesafioQUATRO.html). #7DaysOfCode-Alura-ONE
+
+## #7DaysOfCode - Dia 5: Jogo simples de adivinhação.
+
+Objetivo: Criar um programa em JavaScript que simule uma lista de compras, organizando itens por categorias.
+
+Funcionalidades:
+
+Perguntar ao usuário:
+Se deseja adicionar um item à lista.
+O nome do item.
+A categoria do item (frutas, laticínios, congelados, doces, etc.).
+Armazenar os itens: Utilizar um array para armazenar os itens e suas respectivas categorias.
+Agrupar os itens: Organizar os itens em categorias e exibir o resultado formatado.
+Exemplo de saída:
+
+```Javascript
+Lista de compras:
+    Frutas: banana, tomate, maçã, uva, abacate
+    Laticínios: leite vegetal, leite de vaca, leite em pó
+    Congelados:
+    Doces: chiclete e bala de ursinho
+```
+
+Dicas:
+
+Utilizar arrays: O objeto Array é ideal para armazenar listas de elementos.
+Método push(): Adiciona um novo elemento ao final de um array.
+Formatar a saída: Utilizar console.log para exibir o resultado de forma clara e organizada.
+Exemplo de código para criar um array vazio e adicionar um elemento:
+
+```JavaScript
+let meuArray = []; // Cria um array vazio
+meuArray.push("elemento1"); // Adiciona "elemento1" ao array
+```
+
+### O Quinto codigo resolvido no Link Abaixo:
+
+Quinto desafio concluído: [Click Aqui](https://github.com/LucasASouzak/7DaysOfCode-Alura-ONE/blob/main/7DiasDesafioCinco.html). 
