@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>#7DaysOfCode - Lógica JS 5/7: Arrays e coleções</title>
+    <style>
+        body{
+            font: normal 2.5rem Arial;
+            display: flex;
+            box-sizing: border-box;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+
+let listaDeCompras = {};
+
+function adicionarItem() {
+  const adicionar = prompt("Deseja adicionar um item à lista de compras? (sim/não)");
+  if (adicionar.toLowerCase() === 'sim') {
+    const item = prompt("Qual o nome do item?");
+    const categoria = prompt("Qual a categoria do item? (frutas, laticínios, congelados, doces)");
+
+    
+    if (!listaDeCompras[categoria]) {
+      listaDeCompras[categoria] = [];
+    }
+
+   
+    listaDeCompras[categoria].push(item);
+
+    adicionarItem(); 
+  } else {
+    
+    let listaCompleta = "";
+    for (const categoria in listaDeCompras) {
+      listaCompleta += `${categoria}: ${listaDeCompras[categoria].join(', ')}\n`;
+    }
+    document.write(listaCompleta);
+  }
+}
+
+adicionarItem();
+
+
+
+
+    </script>
+</body>
+</html>
