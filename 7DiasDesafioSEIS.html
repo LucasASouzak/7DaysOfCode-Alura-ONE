@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#7DaysOfCode - Lógica JS 6/7:Remoção de Arrays
+        .</title>
+        <style>
+            body{
+                padding: 0;
+                margin: 0;
+                background-color: blanchedalmond;
+                font-size: large;
+                font-weight: 600;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .lista-compras {
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+                border: 1px solid #ccc;
+                padding: 10px;
+                width: 300px;
+            }
+
+            .lista-compras h3 {
+                margin-bottom: 5px;
+            }
+
+            .lista-compras ul {
+                list-style: none;
+                padding: 0;
+            }
+
+            .lista-compras li {
+                margin-bottom: 5px;
+            }
+        </style>
+    
+</head>
+<body>
+    <script>
+ let listaDeCompras = {};
+
+function adicionarItem() {
+  const adicionar = prompt("Deseja adicionar um item à lista de compras ou remover um item? Adicionar digite 1, remover digite 2 para sair digite 0.");
+
+  if (adicionar.toLowerCase() == 1 ) {
+    const item = prompt("Qual o nome do item?");
+    const categoria = prompt("Qual a categoria do item? (frutas, laticínios, congelados, doces, etc)");
+
+    if (!listaDeCompras[categoria]) {
+      listaDeCompras[categoria] = [];
+    }
+
+    listaDeCompras[categoria].push(item);
+
+    adicionarItem(); 
+  } else if (adicionar.toLowerCase() == 2) {
+    if (Object.keys(listaDeCompras).length === 0) {
+      alert("A lista de compras está vazia!");
+      adicionarItem();
+    } else {
+      let listaCompleta = "";
+      for (const categoria in listaDeCompras) {
+        listaCompleta += `${categoria}: ${listaDeCompras[categoria].join(', ')}\n`;
+      }
+      alert(listaCompleta);
+      const itemRemover = prompt("Qual item você deseja remover?");
+
+      let itemEncontrado = false;
+      for (const categoria in listaDeCompras) {
+        const index = listaDeCompras[categoria].indexOf(itemRemover);
+        if (index !== -1) {
+          listaDeCompras[categoria].splice(index, 1);
+          itemEncontrado = true;
+          alert(`O item ${itemRemover} foi removido da lista!`);
+          break;
+        }
+      }
+
+      if (!itemEncontrado) {
+        alert("Não foi possível encontrar o item dentro da lista!");
+      }
+      adicionarItem();
+    }
+  } else if (adicionar.toLowerCase() == 0) {
+    document.writeln('<h1>Lista de compras completa:</h1>');
+    for (const categoria in listaDeCompras) {
+      document.writeln(`<div class="lista-compras">`);
+      document.writeln(`<h3>${categoria}:</h3>`);
+      document.writeln(`<ul>`);
+      for (const item of listaDeCompras[categoria]) {
+        document.writeln(`<li>${item}</li>`);
+      }
+      document.writeln(`</ul>`);
+      document.writeln(`</div>`);
+    }
+  } else {
+    alert("Opção inválida! Digite 'adicionar', 'remover' ou 'sair'.");
+    adicionarItem();
+  }
+}
+
+adicionarItem();
+
+
+    </script>    
+</body>
+</html>
