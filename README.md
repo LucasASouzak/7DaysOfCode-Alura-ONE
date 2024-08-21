@@ -20,7 +20,7 @@ Neste desafio, você precisa criar um programa que simule um site de cadastro. O
 
 **Exemplo de Código (JavaScript):**
 
-```Javascript
+```javascript
 const nome = prompt("Qual o seu nome?");
 const idade = prompt("Quantos anos você tem?");
 const linguagem = prompt("Qual linguagem de programação você está estudando?");
@@ -74,6 +74,30 @@ O desafio é adicionar a funcionalidade de remoção de itens à lista de compra
 
 **Solução:** [Click Aqui](https://github.com/LucasASouzak/7DaysOfCode-Alura-ONE/blob/main/7DiasDesafioSEIS.html)
 
-### Dia 7:  Desafio Final
+### Dia 7: Desafio Final
 
+O desafio final propõe a criação de uma calculadora em JavaScript, utilizando funções para organizar o código.
 
+A calculadora deve:
+
+* Permitir a escolha de uma operação: soma, subtração, multiplicação, divisão ou sair.
+* Solicitar os números: O usuário deve inserir dois números para a operação escolhida.
+* Realizar o cálculo: Cada operação deve ser uma função separada que recebe os números como parâmetros e retorna o resultado.
+* Mostrar o resultado: A calculadora deve exibir o resultado da operação na tela.
+* Permitir a repetição: A calculadora deve continuar solicitando operações até que o usuário escolha a opção "sair".
+
+**Dicas:**
+
+* Utilizar estruturas de repetição: O while ou o do...while são ideais para repetir o processo de escolha da operação e cálculo.
+* Utilizar o switch: Essa estrutura é útil para lidar com múltiplas opções de operação de forma mais organizada.
+* Criar funções para cada operação: Cada operação (soma, subtração, etc.) deve ter sua própria função para facilitar a organização e reutilização do código.
+* Personalizar a calculadora: A aparência e o funcionamento da calculadora podem ser personalizados de acordo com a preferência do desenvolvedor.
+
+**Recursos adicionais:**
+
+* Funções em JavaScript: O link fornecido oferece mais informações sobre como criar e utilizar funções em JavaScript.
+* Estrutura switch em JavaScript: O link fornecido explica como utilizar a estrutura switch para tomar decisões com base em diferentes valores.
+
+Em resumo, o objetivo deste desafio é consolidar os conhecimentos em JavaScript, praticando a organização do código através de funções e a utilização de estruturas de controle como o switch e while para criar uma aplicação funcional e interativa.
+
+**Solução:** [Click Aqui](https://github.com/LucasASouzak/7DaysOfCode-Alura-ONE/blob/main/7DiasDesafioSETE.htmll) 
