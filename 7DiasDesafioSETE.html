@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>#7DaysOfCode - Lógica JS 7/7:.</title>
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>#7DaysOfCode - Lógica JS 7/7: Calculadora</title>
         <style>
             body{
                 padding: 0;
@@ -14,14 +14,112 @@
                 font-weight: 600;
                 box-sizing: border-box;
                 display: flex;
-                justify-content: center;
+                
+            }
+            main{
+                width: 500px;
+                height: 800px;
+                background-color: bisque;
+                display: flex;
+                text-align: center;
+                flex-direction: column;
             }
         </style>
-    
-</head>
-<body>
-    <script>
-   
-    </script>    
-</body>
-</html>
+        
+    </head>
+    <body>
+        <main>
+            <h1>Desafio Final #7DaysOfCode</h1>
+            <div id="soma"></div>
+            <div id="subtração"></div>
+            <div id="multiplicação"></div>
+            <div id="divisão"></div>
+            <div id="n1">Operador 1 <input type="number" id="1"> </div> 
+            <div id="op">.</div>
+            <div id="n2">Operador 2 <input type="number" id="2"> </div>
+            <div id="cal"><input type="button" value="Calcular" id="calc" onclick="calcular()"></div>
+            <div id="aviso">Aguardando Instrução...</div>
+            <div><input type="button" id="sair" value="SAIR" onclick="sair()"></div>
+            
+        </main>
+        <script>
+            alert ("Esse é  desafio final, 7 Dias de codigo!")
+            alert ("Para iniciar selecione uma opção...")
+
+            let operacao
+
+            function definirOperacao() {
+                operacao = prompt("Digite somente o numero: 1-SOMA, 2-SUBTRAÇÃO, 3-MULTIPLICAÇÃO, 4-DIVISÃO, 5-SAIR.")
+                if (operacao === null || operacao === "" || operacao < 1 || operacao > 5) {
+                    alert("Opção inválida! Tente novamente.")
+                    definirOperacao() 
+                } else {
+                    atualizarOperador() 
+                }
+            }
+
+            function atualizarOperador() {
+                let operador = document.getElementById("op")
+                if (operacao === "1") {
+                    operador.innerHTML = '+'
+                } else if (operacao === "2") {
+                    operador.innerHTML = '-'
+                } else if (operacao === "3") {
+                    operador.innerHTML = 'x'
+                } else if (operacao === "4") {
+                    operador.innerHTML = '/'
+                } else {
+                    operador.innerHTML = 'Opção inválida!'
+                }
+            }
+
+            function soma(n1, n2){
+                return n1 + n2
+            }
+            function subtração(n1, n2){
+                return n1 - n2
+            }
+            function multiplicação(n1, n2){
+                return n1 * n2
+            }
+            function divisão(n1, n2){
+                if(n2 === 0){
+                    return "Erro: Divisão por zero!"
+                } else {
+                    return n1 / n2
+                }
+            }
+            function sair(){
+                alert("Até a próxima!")
+            }
+
+            function calcular() {
+                const n1 = parseFloat(document.getElementById("1").value)
+                const n2 = parseFloat(document.getElementById("2").value)
+
+                switch (operacao) {
+                    case "1":
+                        document.getElementById("aviso").textContent = `Resultado da Soma: ${soma(n1, n2)}`
+                        break
+                    case "2":
+                        document.getElementById("aviso").textContent = `Resultado da Subtração: ${subtração(n1, n2)}`
+                        break
+                    case "3":
+                        document.getElementById("aviso").textContent = `Resultado da Multiplicação: ${multiplicação(n1, n2)}`
+                        break
+                    case "4":
+                        document.getElementById("aviso").textContent = `Resultado da Divisão: ${divisão(n1, n2)}`
+                        break
+                    case "5":
+                        sair()
+                        break
+                    default:
+                        document.getElementById("aviso").textContent = "Opção inválida!"
+                        break
+                }
+            }
+
+            definirOperacao() 
+        </script>    
+    </body>
+    </html>
